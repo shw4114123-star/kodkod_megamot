@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "fullName": "bjh",
+    "accountType": "Premium",
+    "Balance": 44,
+    "isActive": true
+  },
+  {
+    "id": "2",
+    "fullName": "dfsgeg",
+    "accountType": "Premium",
+    "Balance": 444,
+    "isActive": true
+  },
+  {
+    "id": "3",
+    "fullName": "dksngfv",
+    "accountType": "Premium",
+    "Balance": 43535,
+    "isActive": true
+  },
+  {
+    "id": "4",
+    "fullName": "shlomo",
+    "accountType": "Premium",
+    "Balance": 43,
+    "isActive": true
+  },
+  {
+    "id": "5",
+    "fullName": "sdzgbz",
+    "accountType": "Premium",
+    "Balance": 544,
+    "isActive": true
+  },
+  {
+    "id": "6",
+    "fullName": "�����",
+    "accountType": "Student",
+    "Balance": 4321,
+    "isActive": true
+  }
+]
