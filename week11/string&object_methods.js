@@ -82,6 +82,19 @@
 
 
 // 13.
+const fullName = name => name.trim().split().toUpperCase();
+console.log(fullName("   shlomo  "))
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -225,19 +225,39 @@
 
 
 
-function createCounter() {
-    let counter = 0;
-    const obj = {
-        inc: () => {
-            ++counter;
-        },
-        dec: function () {
-            --counter;
-        },
-        getCounter: () => counter,
-        setCounter: (newCounter) => counter = newCounter
-    }
-    return obj;
-}
+// function createCounter() {
+//     let counter = 0;
+//     const obj = {
+//         inc: () => {
+//             ++counter;
+//         },
+//         dec: function () {
+//             --counter;
+//         },
+//         getCounter: () => counter,
+//         setCounter: (newCounter) => counter = newCounter
+//     }
+//     return obj;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

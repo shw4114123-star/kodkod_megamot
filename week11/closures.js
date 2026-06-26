@@ -29,22 +29,22 @@
 
 
 // // 3.
-// function createCounter() {
-//   let count = 0;
-//   function add() {
-//     count++;
-//     return count;
-//   }
-//   return add;
-// }
-// const co = createCounter()
-// console.log(co())
-// console.log(co())
-// console.log(co())
-// console.log(co())
-// console.log(co())
-// console.log(co())
-// console.log(co())
+function createCounter() {
+    let count = 0;
+    function add() {
+        count++;
+        return count;
+    }
+    return add;
+}
+const co = createCounter()
+console.log(co())
+console.log(co())
+console.log(co())
+console.log(co())
+console.log(co())
+console.log(co())
+console.log(co())
 
 
 // // 4.
@@ -95,12 +95,13 @@
 // console.log(secretMenag.getSecret())
 
 
-// // 8.
+// // // 8.
 // const add = a => a + a;
 // function once(fn) {
 //   let run = false
 //   function iner(a) {
 //     if (!run) {
+//       run = true
 //       return fn(a)
 //     } else return "allready run"
 //   }
@@ -108,22 +109,7 @@
 // }
 // const runFu = once(add)
 // console.log(runFu(32))
-
-
-// 9.
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(runFu(32))
 
 
 
