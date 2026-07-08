@@ -17,16 +17,16 @@
 
 
 // const fs = require("fs")
-
-// fs.writeFile("./data/momo.txt", "momo is a king", "utf-8", (e) => {
-//   if (e) return console.log(e);
-//   console.log("file created successfully");
-//   readFile("./data/momo.txt", "utf-8", (e, data) => {
+// function ii() {
+//   fs.writeFile("./step.json", "momo is a king", "utf-8", (e) => {
 //     if (e) return console.log(e);
+//     console.log("file created successfully");
+//     fs.readFile("./step.json", "utf-8", (e, data) => {
+//       if (e) return console.log(e);
+//       return console.log(data);
+//     });
 //   });
-// });
-
-
+// }
 
 
 
@@ -254,12 +254,14 @@ const fs = require("fs/promises")
 async function readData() {
   try {
     const res = await fs.readFile("./step.json", "utf-8");
-    return JSON.parse(res || []);
+    return console.log(JSON.parse(res || []));
   } catch (e) {
     console.log(e);
     return [];
   }
 }
+const ii = readData()
+console.log(ii);
 
 async function writeData(data) {
   try {
