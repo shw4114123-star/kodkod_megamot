@@ -1,0 +1,25 @@
+{
+  "name": "kodkod_megamot",
+  "version": "1.0.0",
+  "description": "\"# kodkod_megamot\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shw4114123-star/kodkod_megamot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/shw4114123-star/kodkod_megamot/issues"
+  },
+  "homepage": "https://github.com/shw4114123-star/kodkod_megamot#readme",
+  "dependencies": {
+    "r": "^0.0.5",
+    "readline-sync": "^1.4.10"
+  }
+}
