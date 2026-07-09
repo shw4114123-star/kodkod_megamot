@@ -299,11 +299,11 @@
 
 
 // יום רביעי
-import express from "express"
+// import express from "express"
 
 
 
-const app = express();
+// const app = express();
 
 
 // app.get("/", (req, res)=>{
@@ -325,21 +325,48 @@ const app = express();
 //     res.end("Hello, client")
 // })
 
-app.get("/users/:id", (req,res)=>{
-    console.log(req.params);
-    res.end("hello momo\n");
-})
+
+// app.get("/users/:id", (req,res)=>{
+    //     console.log(req.params);
+    //     res.end("hello momo\n");
+    // })
+    
 
 
-app.listen(3000, () => {
-    console.log("server tuning...");
-})
+// app.listen(3000, () => {
+//     console.log("server tuning...");
+// })
+
+
+
+
+// צהריים 
+// הפרדה בין השרתים הפרדה בין router ל app
+import express from "express"
+import usersRouter from "./routes/users.js"
+import postsRouter from "./routes/users.js"
+
+// const app = express()
+
+// app.use(express.json())
+
+// app.use("/users", usersRouter)
+// app.use("/posts", postsRouter)
+
+
+
+// app.listen(3000, ()=>{
+//     console.log("server runing...");
+    
+// })
 
 
 
 
 
 
+
+console.log(process.env.USER_NAME);
 
 
 
