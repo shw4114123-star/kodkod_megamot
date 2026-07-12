@@ -1,0 +1,26 @@
+[
+    {
+        "id": 102,
+        "status": "NEW",
+        "customer": "Sarah Smith",
+        "table": 12
+    },
+    {
+        "id": 103,
+        "status": "NEW",
+        "customer": "John Doe",
+        "table": 2
+    },
+    {
+        "id": 104,
+        "status": "DELIVERED",
+        "customer": "Emily Brown",
+        "table": 7
+    },
+    {
+        "id": 105,
+        "status": "CANCELLED",
+        "customer": "Michael Green",
+        "table": 9
+    }
+]
