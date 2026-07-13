@@ -42,6 +42,6 @@ export const updateOrder = async (req, res) => {
 
 export const updateStatusOrder = async (req, res) => {
     const { id } = req.params
-    await updateOrder(id, req.body)
+    await updateStatus(id, req.body)
     return res.end("the order updated succesfuly")
 }
