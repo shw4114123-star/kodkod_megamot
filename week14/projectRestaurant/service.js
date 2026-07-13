@@ -1,8 +1,8 @@
 import { readFile, writeFile } from "./readAndWriteFile.js";
 
 export async function checkOrderId(id) {
-    const data = await readFile()    
-    const order = data.find(ord => ord.id === +id)    
+    const data = await readFile()
+    const order = data.find(ord => ord.id === +id)
     return order
 }
 
@@ -28,4 +28,27 @@ export async function checkByTable(table) {
     const data = await readFile()
     const ByTable = data.filter(order => order.table === +table)
     return ByTable
+}
+
+export async function writeToJson(body) {
+    const data = await readFile()
+    const nextId = Math.max(...data.map(order => order.id)) + 1
+    data.push({ "id": nextId, "status": NEW, ...body })
+    await writeFile(data)
+}
+
+export async function updateorder(id, body) {
+    const data = await readFile()
+    const order = data.find(ord => ord.id === +id)
+    order.status = body.status
+    order.customer = body.customer
+    order.table = body.table
+    await writeFile(data)
+}
+
+export async function updateStatus(id, body) {
+    const data = await readFile()
+    const order = data.find(ord => ord.id === +id)
+    order.status = body.status
+    await writeFile(data)
 }

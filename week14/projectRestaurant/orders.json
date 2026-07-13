@@ -1,5 +1,11 @@
 [
     {
+        "id": 101,
+        "status": "DELIVERED",
+        "customer": "Michael Green",
+        "table": 9
+    },
+    {
         "id": 102,
         "status": "NEW",
         "customer": "Sarah Smith",
@@ -19,6 +25,30 @@
     },
     {
         "id": 105,
+        "status": "CANCELLED",
+        "customer": "Michael Green",
+        "table": 9
+    },
+    {
+        "id": 106,
+        "status": "NEW",
+        "customer": "John Doe",
+        "table": 4
+    },
+    {
+        "id": 107,
+        "status": "NEW",
+        "customer": "Michael Green",
+        "table": 9
+    },
+    {
+        "id": 108,
+        "status": "NEW",
+        "customer": "Michael Green",
+        "table": 9
+    },
+    {
+        "id": 109,
         "status": "CANCELLED",
         "customer": "Michael Green",
         "table": 9
