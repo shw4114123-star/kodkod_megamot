@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+    <link rel="stylesheet" href="content.css">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div class="right-nav">
+            הגינה של מיכל
+        </div>
+        <div class="left-nav">
+            <a class="nav-home" href="http://127.0.0.1:5501/garden-project/main.html">בית</a>
+            <a class="nav-content" href="http://127.0.0.1:5501/garden-project/contact.html">צור קשר</a>
+        </div>
+    </nav>
+    <main class="main">
+        <section class="section-1">
+            <h1 class="part-1-1">נשמח לשמוע מכם</h1>
+            <p class="part-2-1">שאלות על טיפול בצמחים, הזמנות ומשלוחים -- כל התשובות כאן</p>
+        </section>
+        <section class="section-2">
+            <div class="block-1-2">
+                <div class="words-2">
+                    <h3 class="h3-words">החנות במספרים</h3>
+                </div>
+            </div>
+            <div class="block-2-2">
+                <div class="part-1-2">
+                    <h5 class="hadres">כתובת</h5>
+                    <p class="p-hadres">רחוב הגפן 12</p>
+                </div>
+                <div class="part-2-2">
+                    <h5 class="hours">שעות פתיחה</h5>
+                    <p class="p-hours">א'-ה' 19:00-9:00</p>
+                </div>
+                <div class="part-3-2">
+                    <h5 class="sturday">ששי</h5>
+                    <p class="p-sturday">14:00-9:00</p>
+                </div>
+                <div class="part-4-2">
+                    <h5 class="phone">טלפון</h5>
+                    <p class="p-phone">03-1234567</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <div class="words-3">
+                <h3>השאירו פרטים ונחזור אליכם</h3>
+                <P>מתלבטים איזה צמח מתאים לבית שלכם? מלאו את הפרטים ואחת המומחיות שלנו תחזור אליכם עם המלצה אישית</P>
+            </div>
+            <form action="http://localhost:3000" method="post">
+                <div class="inputs">
+                    <div class="name">
+                        <label for="name">שם מלא</label>
+                        <input type="text" name="name" id="name" placeholder="לדוגמא:ישראל ישראלי">
+                    </div>
+                    <div class="help">
+                        <label for="help">איך נוכל לעזור</label>
+                        <select class="select" name="help" id="help">
+                            <option>שאלה כללית</option>
+                            <option>פרחים לחתונה</option>
+                            <option>עיצוב זרים</option>
+                        </select>
+                    </div>
+                    <div class="email">
+                        <label for="email">איימיל לחזרה</label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="story">
+                        <label for="story">ספרו לנו קצת</label>
+                        <textarea class="textarea" type="text" name="story" id="story"
+                            placeholder="למשל: מחפשת צמח לפינת אוכל..."></textarea>
+                    </div>
+                </div>
+                <div class="content">
+                    <button class="button" type="submit">שליחת הפנייה</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="right-footer">
+            <a class="footer-home" href="http://127.0.0.1:5501/garden-project/main.html">בית</a>
+            <a class="footer-content" href="http://127.0.0.1:5501/garden-project/contact.html">צור קשר</a>
+        </div>
+        <div class="left-footer">הגינה של מיכל - עם אהבה,ואור שמש</div>
+    </footer>
+</body>
+
+</html>

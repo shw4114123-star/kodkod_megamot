@@ -1,0 +1,289 @@
+/* :root{
+
+} */
+body {
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+}
+
+.top-nav {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.nav-home {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.nav-content {
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.nav-content:hover {
+    text-decoration: none;
+}
+
+.main {
+    background-color: #f3f6f2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.part-1-1 {
+    padding-top: 25px;
+    color: #95b028;
+    height: 10px;
+}
+
+.section-2 {
+    border: 1px solid gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border-radius: 10px;
+}
+
+.block-1-2 {
+    margin: 10px;
+}
+
+.block-2-2 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    gap: 10px;
+    height: 80px;
+}
+
+.part-1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f1f3ef;
+    flex: 1;
+    position: relative;
+}
+
+.part-2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f1f3ef;
+    flex: 1;
+    position: relative;
+}
+
+.part-3-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f1f3ef;
+    flex: 1;
+    position: relative;
+
+
+}
+
+.part-4-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #f1f3ef;
+    flex: 1;
+    position: relative;
+
+}
+
+.block-2-2 h3 {
+    color: #dfbe1b;
+    flex: 1;
+    position: absolute;
+}
+
+.block-2-2 p {
+    flex: 1;
+    position: absolute;
+    top: 30px;
+}
+
+
+
+.section-3 {
+    border: 1px solid gray;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.words-3 {
+    padding: 15px;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: #f3f6f2;
+
+}
+
+.select {
+    border-radius: 10px;
+    height: 36px;
+    border: 1px solid black;
+    background-color: #f3f6f2;
+
+}
+
+.textarea {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 70px;
+    background-color: #f3f6f2;
+
+
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -29px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -29px;
+}
+
+.content {
+    display: flex;
+    justify-content: start;
+    padding-right: 30px;
+    padding-top: -4px;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    background-image: linear-gradient(to left, #c7b10d, #63b044);
+    margin: 7px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: white;
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.footer-home {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.footer-content:hover {
+    text-decoration: none;
+}
+
+.footer-content {
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
