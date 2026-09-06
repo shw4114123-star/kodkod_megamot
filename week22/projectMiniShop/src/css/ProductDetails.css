@@ -1,0 +1,35 @@
+.details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid black; */
+    padding: 30px;
+    margin: 10px;    
+    background-color: aquamarine;
+}
+.image-details{
+    height: 400px;
+    width: 370px;
+}
+.leftSize{
+    display: flex;
+    flex-direction: column;
+gap: 40px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 30px;
+}
+.add-to-favotite{
+    border-radius: 10px;
+}
+.back{
+    border-radius: 10px;
+}
+.price{
+    font-size: 30px;
+}
+.title{
+    font-size: 20px;
+}

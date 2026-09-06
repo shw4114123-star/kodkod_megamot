@@ -1,0 +1,17 @@
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aquamarine;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.links{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.link{
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+}

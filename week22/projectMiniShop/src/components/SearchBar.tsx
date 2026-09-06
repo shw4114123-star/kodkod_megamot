@@ -1,0 +1,20 @@
+import { productsCard } from "../types/product"
+
+
+export default function SearchBar() {
+    const data = productsCard(s => s.products)
+    const setSearchProducts = productsCard(s => s.setSearchProducts)
+    const search = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const valie = event.target.value
+        console.log(valie);
+        const found = data?.filter(products => products.title.includes(valie))
+        const product = found.length === 0 && valie.length > 0 ? null : found 
+        console.log(found);
+        console.log(product);
+        setSearchProducts(product)
+    }
+    return (
+        <input type="text" placeholder="search" onChange={search} />
+    )
+}
+
