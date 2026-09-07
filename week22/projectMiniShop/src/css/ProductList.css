@@ -4,4 +4,13 @@
     gap: 10px;
     /* background-color: aquamarine; */
     padding: 20px;
+    height: 100%;
+}
+.empty-favorite{
+    height: 70vh;
+    font-size: large;
+}
+.no-result{
+    height: 58.6vh;
+    font-size: larger;
 }

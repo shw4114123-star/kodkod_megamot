@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.5px solid rgb(246, 243, 243);
-    height: 40px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    gap: 40px;
+    background-color: rgb(203, 149, 149);
 }

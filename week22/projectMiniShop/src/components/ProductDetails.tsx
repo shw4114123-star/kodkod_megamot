@@ -1,11 +1,10 @@
 import { useNavigate, useParams } from "react-router"
-import useFetch from "../hooks/useFetch"
 import "../css/ProductDetails.css"
 import { productsCard } from "../types/product"
 
 export default function ProductDetails() {
     const navigate = useNavigate()
-    const { data } = useFetch("https://fakestoreapi.com/products")
+    const data = productsCard(s => s.products)
     const { id } = useParams()
     const product = data?.find(product => product.id === Number(id))
     const allFavorites = productsCard(s => s.favorites)
@@ -18,6 +17,7 @@ export default function ProductDetails() {
             <img className="image-details" src={product?.image} alt="" />
             <div className="leftSize">
                 <h1 className="title">{product?.title}</h1>
+                <h6 className="category">{product?.category}</h6>
                 <h4 className="price"> $ {product?.price}</h4>
                 <p className="description">{product?.description}</p>
                 <div className="buttons">

@@ -6,7 +6,8 @@ export default interface Products {
     title: string,
     price: number,
     description: string
-    id: number
+    id: number,
+    category: string
 }
 
 interface productsType {

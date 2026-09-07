@@ -13,7 +13,7 @@
 .leftSize {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 }
 
 .buttons {
@@ -37,4 +37,9 @@
 
 .title {
     font-size: 20px;
+}
+.category{
+    background-color: rgb(206, 232, 254);
+    width: 80px;
+    padding: 8px;
 }
