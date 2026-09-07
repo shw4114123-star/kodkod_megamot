@@ -12,7 +12,7 @@ export default function ProductList() {
         return (
             <div className="allCards">
                 {display?.map((product) => (
-                    <ProductCard key={product.id} {...product} />
+                    <ProductCard key={product.id} {...product}/>
                 ))}
             </div>
         )

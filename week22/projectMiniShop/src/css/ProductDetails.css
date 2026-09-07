@@ -1,35 +1,40 @@
-.details{
+.details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* border: 2px solid black; */
     padding: 30px;
-    margin: 10px;    
-    background-color: aquamarine;
+    margin: 10px;
 }
-.image-details{
+
+.image-details {
     height: 400px;
     width: 370px;
 }
-.leftSize{
+
+.leftSize {
     display: flex;
     flex-direction: column;
-gap: 40px;
+    gap: 40px;
 }
-.buttons{
+
+.buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     height: 30px;
 }
-.add-to-favotite{
+
+.add-to-favotite {
     border-radius: 10px;
 }
-.back{
+
+.back {
     border-radius: 10px;
 }
-.price{
+
+.price {
     font-size: 30px;
 }
-.title{
+
+.title {
     font-size: 20px;
 }

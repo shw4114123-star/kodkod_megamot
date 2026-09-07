@@ -14,7 +14,7 @@ export default function SearchBar() {
         setSearchProducts(product)
     }
     return (
-        <input type="text" placeholder="search" onChange={search} />
+        <input className="input" type="text" placeholder="search..." onChange={search} />
     )
 }
 

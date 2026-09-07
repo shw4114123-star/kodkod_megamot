@@ -1,7 +1,7 @@
 .card {
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(201, 243, 243);
+    /* background-color: rgb(201, 243, 243); */
     display: grid;
     grid-template-rows: 1fr;
     padding: 10px;
@@ -31,7 +31,13 @@
     flex-direction: column;
 }
 .button{
+    width: 30px;
     height: 30px;
     border-radius: 10px;
-    background-color: rgb(104, 225, 185);
+    margin-left: auto;
+    border: none;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

@@ -1,9 +1,8 @@
 .header{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: aquamarine;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* background-color: aquamarine; */
+    padding: 20px;
 }
 .links{
     display: flex;
@@ -14,4 +13,8 @@
     margin-top: 5px;
     text-decoration: none;
     color: black;
+}
+.input{
+    border-radius: 15px;
+    width: 130px;
 }
