@@ -5,11 +5,13 @@ import { useContext } from 'react'
 import { UseContext } from './context/ThemeContext'
 import "./css/layout.css"
 export default function Layout() {
-    const {theme} = useContext(UseContext)
+    const { theme } = useContext(UseContext)
     return (
-        <div className={theme}>
+        <div className={`layout ${theme}`}>
             <Header />
-            <Outlet />
+            <main className='main'>
+                <Outlet />
+            </main>
             <Footer />
         </div>
     )

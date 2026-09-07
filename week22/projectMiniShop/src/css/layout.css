@@ -1,15 +1,27 @@
-.light{
+.light {
     background-color: white;
     color: black;
 }
-.dark{
+
+.dark {
     background-color: black;
     color: white;
 }
 
-.dark .link{
+.dark .link {
     color: white;
 }
-.light .link{
+
+.light .link {
     color: black;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
 }
