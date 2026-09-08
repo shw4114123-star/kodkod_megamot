@@ -1,6 +1,5 @@
 import { Link } from "react-router";
 import "../css/Header.css"
-import SearchBar from "./SearchBar";
 import { productsCard } from "../types/product";
 import ThemeToggle from "./ThemeToggle";
 
