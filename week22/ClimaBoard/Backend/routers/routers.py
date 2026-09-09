@@ -45,7 +45,7 @@ def get_favorite_router(name: str):
 
 @router.post("/favorite")
 def add_favorite_router(favorite: CheckBody):
-    return add_to_favorite(favorite.name, favorite.city_name, favorite.lon, favorite.lat)
+    return add_to_favorite(favorite)
 
 
 @router.delete("/favorite/{name}")

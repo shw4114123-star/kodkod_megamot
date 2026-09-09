@@ -1,4 +1,5 @@
 import requests
+from services.read_and_write_data import read_file, write_file
 
 
 def search_city(name: str):
@@ -39,28 +40,43 @@ def get_compare(lon1, lat1, lon2, lat2):
     return {"city1": city1, "city2": city2}
 
 
-# סוג הנתונים = {"name" : [], "name": []}
-favorite_db = {}
-
-
 def get_favorite(name):
-    for item in favorite_db:
-        if item["name"] == name:
-            return item
+    data = read_file()
+    if name in data:
+        return {name: data[name]}
 
 
-def add_to_favorite(name, city_name, lon, lat):
-    if name in favorite_db:
-        favorite_db[name].append({"city_name": city_name, "lon": lon, "lat": lat})
+def add_to_favorite(favorite):
+    data = read_file()
+    if favorite.name in data:
+        data[favorite.name].append(
+            {
+                "id": favorite.id,
+                "city_name": favorite.city_name,
+                "country": favorite.country,
+                "lon": favorite.lon,
+                "lat": favorite.lat,
+            }
+        )
     else:
-        favorite_db[name] = [{"city_name": city_name, "lon": lon, "lat": lat}]
-    return favorite_db
+        data[favorite.name] = [
+            {
+                "id": favorite.id,
+                "city_name": favorite.city_name,
+                "country": favorite.country,
+                "lon": favorite.lon,
+                "lat": favorite.lat,
+            }
+        ]
+    write_file(data)
+    return data
 
 
 def delete_favorite(name, city_name):
-    if name in favorite_db:
-        print(name)
-        for item in favorite_db[name]:
+    data = read_file()
+    if name in data:
+        for item in data[name]:
             if item["city_name"] == city_name:
-                favorite_db[name].remove(item)
-    return favorite_db
+                data[name].remove(item)
+    write_file(data)
+    return data
