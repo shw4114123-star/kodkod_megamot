@@ -13,5 +13,7 @@ def exchange_text(text):
     for signal in text:
         if signal in ATBASH_DICT:
             reverse_text += ATBASH_DICT[signal]
+        else:
+            reverse_text += signal
     return reverse_text
 
