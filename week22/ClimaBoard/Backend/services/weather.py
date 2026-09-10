@@ -5,7 +5,7 @@ from fastapi import HTTPException
 
 def search_city(name: str):
     try:
-        url = "https://geocoding-api.open-meteo.comv1/search"
+        url = "https://geocoding-api.open-meteo.com/v1/search"
         params = {"name": name}
         res = requests.get(url, params=params)
         data = res.json()

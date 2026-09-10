@@ -8,6 +8,7 @@ from services.weather import (
     add_to_favorite,
     delete_favorite,
 )
+from services.atbash import exchange_text
 from schemas.padentic import CheckBody
 
 router = APIRouter()
@@ -32,7 +33,7 @@ def get_current_router(
 
 @router.get("/forecast")
 def get_forecast_router(
-    lon: float = Query(...,ge=-180, le=180), lat: float = Query(...,ge=-90, le=90)
+    lon: float = Query(..., ge=-180, le=180), lat: float = Query(..., ge=-90, le=90)
 ):
     return get_forecast(lon, lat)
 
@@ -63,3 +64,8 @@ def delete_favorite_router(
     city_name: str = Query(min_length=2, max_length=30),
 ):
     return delete_favorite(name, city_name)
+
+
+@router.get("/atbash")
+def get_atbsh_router(text):
+    return exchange_text(text)
