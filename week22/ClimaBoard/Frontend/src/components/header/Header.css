@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.right-size{
+    display: flex;
+    justify-content: space-around;
+}
+.left-size{
+    padding-left: 30px;
+}
+
+.name{
+    display: inline;
+}
+
+.links{
+    text-decoration: none;
+    color: black;
+}

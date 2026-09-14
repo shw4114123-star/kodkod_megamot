@@ -1,0 +1,9 @@
+.enpty{
+    background-color:bisque;
+    min-height: 80.7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+}

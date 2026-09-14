@@ -1,0 +1,24 @@
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color:bisque;
+    min-height: 77.5vh;
+    padding: 30px;
+}
+
+.input-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-input{
+    padding:20px ;
+    background-color: antiquewhite;
+}
+.search-button{
+    padding:20px ;
+    background-color: antiquewhite;
+}

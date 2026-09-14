@@ -12,9 +12,6 @@ export default function HomePage() {
             <h2>ירושלים</h2>
             <h3> {data.temperature_2m} : טמפרטורה נוכחית</h3>
             <p> {data.weather_code} : קוד עננות</p>
-            <Link to={"/search"}><button>חיפוש עיר</button></Link>
-            <Link to={"/favorites"}><button>המועדפים שלי</button></Link>
-            <Link to={"/compare"}><button>השוואת ערים</button></Link>
         </div>
     )
 }

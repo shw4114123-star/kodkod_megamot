@@ -1,5 +1,3 @@
-
-
 export default function CityDaily({ props }: [] | any) {
 
     console.log(props);

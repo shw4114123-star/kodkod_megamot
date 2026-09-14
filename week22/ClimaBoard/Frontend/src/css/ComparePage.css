@@ -1,0 +1,35 @@
+.all-page{
+    background-color: bisque;
+    min-height: 82.4vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.top{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    gap: 10px;
+}
+
+.details-card{
+    border: 2px solid black;
+    min-height: 100px;
+}
+.ditails{
+    display: flex;
+    justify-content: space-around;
+    background-color: bisque;
+    gap: 20px;
+}
+
+.input{
+    height: 30px;
+}
+.button-compare{
+    height: 30px;
+    width: 165px;
+}

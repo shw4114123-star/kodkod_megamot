@@ -6,7 +6,7 @@ import NotFoundPage from "./pages/notFoundPage";
 import CityDetailesPage from "./pages/cityDetailesPage";
 import HomePage from "./pages/HomePage";
 import FavoritesPage from "./pages/favoritesPage";
-import ComparePage from "./pages/comparePage";
+import ComparePage from "./pages/ComparePage";
 
 export default function App() {
     return (
