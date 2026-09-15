@@ -1,0 +1,14 @@
+.card-daily{
+    border: 1px solid black;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.max{
+    padding: 5px;
+}
+.min{padding: 5px;}
+.code{padding: 5px;}
+.data{padding: 5px;}

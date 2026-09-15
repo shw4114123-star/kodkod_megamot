@@ -17,9 +17,6 @@ export default function ComparePage() {
         const compareRes = await fetch(`http://localhost:3000/compare?lon1=${lon1}&lat1=${lat1}&lon2=${lon2}&lat2=${lat2}`)
         const finallData = await compareRes.json()
         setCompareResult(finallData)
-
-
-
     }
 
     return (
@@ -33,7 +30,7 @@ export default function ComparePage() {
             {compareResult && (
                 <div className="ditails">
                     <div className="details-card">
-                        <h2>{city1}</h2> {/* השם שכתבת ב-State */}
+                        <h2>{city1}</h2>
                         <h4>טמפרטורה: {compareResult.city1.temperature_2m}℃</h4>
                         <h4>תחושה: {compareResult.city1.apparent_temperature}</h4>
                         <h4>רוח: {compareResult.city1.wind_speed_10m}</h4>

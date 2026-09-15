@@ -13,6 +13,8 @@ export default function FavoritesPage() {
     //     // add(data)
     // }, [])
     // const favorite = useFavoritesStore(s => s.favorites)
+    console.log(data);
+    
     if (data[userName].length === 0) return <h1 className="enpty">אין נתונים מועדפים</h1>
     return (
         <div>

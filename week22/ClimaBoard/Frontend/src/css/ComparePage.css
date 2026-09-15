@@ -15,10 +15,6 @@
     gap: 10px;
 }
 
-.details-card{
-    border: 2px solid black;
-    min-height: 100px;
-}
 .ditails{
     display: flex;
     justify-content: space-around;
