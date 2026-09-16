@@ -1,8 +1,6 @@
 export function craeteError(message, status) {
     const err = new Error(message);
-    err.statusCode = status;
-    console.log(err);
-    
+    err.statusCode = status;    
     return err;
 }
 
