@@ -1,11 +1,14 @@
 import { useState } from "react"
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
+import { useToken } from "../store/authStore";
 
 
 export default function LoginComponent() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [referns, setReferens] = useState({})
+    const token = useToken(s => s.addToken)
+    const navigate = useNavigate()
     const handle = async () => {
         const response = await fetch("http://localhost:3001/auto/login", {
             method: "POST",
@@ -15,6 +18,8 @@ export default function LoginComponent() {
         const data = await response.json()
         // console.log(data);
         setReferens(data)
+        token(data)
+        navigate("/users")
     }
     return (
         <div>
