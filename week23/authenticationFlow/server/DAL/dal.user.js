@@ -19,3 +19,9 @@ export async function findUserByEmailDAL(email) {
     const user = await users.findOne({ email: normalizedEmail })
     return user
 }
+
+export async function getAllUsersDAL() {
+    const userList = await users.find().toArray();
+    console.log(userList);
+    return userList    
+}

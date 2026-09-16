@@ -7,10 +7,8 @@ import { asyncWrapper } from "../services/asyncWrapper.js"
 
 const router = express.Router()
 
-router.post("/auth/register", validate(createUserValidation), asyncWrapper(createUser))
+router.post("/register", validate(createUserValidation), asyncWrapper(createUser))
 
-router.post("/auth/login", validate(loginUserValidation), asyncWrapper(loginUser))
-
-
+router.post("/login", validate(loginUserValidation), asyncWrapper(loginUser))
 
 export default router
